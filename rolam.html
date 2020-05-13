@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fenyvesi Flórián honlapja</title>
+    <link rel="stylesheet" href="css/mellek.css">
+</head>
+<body>
+  <body>
+    <div class="kontener"> 
+       <header>
+         <img src="mogi.jpg" alt="mogi" class="mogi">
+
+         <nav>
+           <a href="#" class="hide-desktop">
+              <img src="Menutoggle.png" alt="toggle menu" class="menu" id="menu">
+           </a>
+             <ul class="show-desktop hide-mobile" id="nav" >
+             <li id ="exit" class ="exit-btn hide-desktop">  <img src="exit.png" alt="exit menu"></li>
+             <li><a href="index.html">Kezdőlap</a> </li>
+             <li><a href="rolam.html">Rólam</a> </li>
+             <li><a href="free.html">Szabadidőmben</a> </li>
+             <li><a href="proj.html">Projektek</a> </li>
+            </ul>
+         </nav>
+       </header>
+       <section>    
+       <h1>
+         Rövid ismertető magamról
+       </h1>
+       <p class="alresz">"Ad astra per aspera."</p>
+       </section>
+    </div>
+
+    <div class="kekkontener">
+        <ul>
+            <li> 
+               
+                <div class="szovegkontener">
+                    <p>Ahogyan azt már korábban is említettem, Fenyvesi Flóriánnak hívnak, a Budapesti Műszaki és Gazdaságtudományi Egyetem ( <a href="https://www.bme.hu/">BME</a> ) elsőéves gépészmérnök hallgatója vagyok. 2000.XI.26-án születtem Szegeden, de életem legnagyobb részét családommal együtt Topolyán, Vajdaság egyik nagyrészt magyarlakta kisvárosában töltöttem. <br> </p> 
+                 </div>
+                 <div class="vidikontener">
+                   <iframe width="560" height="315"  src="https://www.youtube.com/embed/fAdKo6gQ6NU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                   
+                
+            </li>
+            <li> 
+                <div class="szovegkontener">
+                    <p>Általános iskolai tanulmányaim végeztével kétszer is útnak indultam, mindkét alkalommal azért, hogy fejleszthessem sportolói képességeimet. Első utam, ahogyan a második is, két évig tartott, és Adára, egy tiszamenti faluba vezetett. Itt életem eddigi talán legváltozatosabb és legsikeresebb két éve várt rám, mi több, a csapatomat sikerült bejutattni a legfelső osztályba. <br>
+                     </p>
+                </div>
+                <img src="muki1.jpg" alt="team" class="team">
+            </li>
+            <li> 
+                <div class="szovegkontener">
+                    <p>Ezután Ausztriába sodort magával az élet, és szerencsére hasnoló sikerességgel folytathattam itt. <br> Nem csak hasznos, hanem kimondottan kedves időszak következett. Ha nem is tökéletesen, de megtanultam németül, így az idegen nyelvek közül nem csak a szerb és angol nyelv, később már a német is hasznomra vált. <br>Emellet persze a sok új ismerősről és barátról sem feledkezhetek meg, innen üdvözlöm mindannyiukat. <br> A figyelmesebb olvasóknak innen már nem nehéz kitalálni, hogy ezután a BME-s életbe vetettem bele magam, de hogy a jövő mit tartogat, ki tudhatja?!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="feherkontener">
+        <div class="kontener">
+            <ul>
+              <li>
+                  <figure>
+                  <p class="alair">Fenyvesi Flórián &#8482</p>
+                    <p class="adress">Topolya, Puskin utca 7, 24300<br> Vajdaság, Szerbia</p>
+                </figure>
+                 
+              </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-kontener">
+            <div class="masikkontener">
+                <p1 class="bal"><a href="#"></a>Kapcsolat: <br>Email: f.fenyvesi00@gmail.com</p1>
+                <p1 class="jobb"><a href="#"></a>Közösségi média: <br>Facebook: Fenyvesi Flórián</p1> 
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+
+      menu.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+      exit.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+      
+    </script>
+
+
+</body>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fenyvesi Flórián honlapja</title>
+    <link rel="stylesheet" href="css/proj.css">
+</head>
+<body>
+  <body>
+    <div class="kontener"> 
+       <header>
+         <img src="mogi.jpg" alt="mogi" class="mogi">
+
+         <nav>
+           <a href="#" class="hide-desktop">
+              <img src="Menutoggle.png" alt="toggle menu" class="menu" id="menu">
+           </a>
+             <ul class="show-desktop hide-mobile" id="nav" >
+             <li id ="exit" class ="exit-btn hide-desktop">  <img src="exit.png" alt="exit menu"></li>
+             <li><a href="index.html">Kezdőlap</a> </li>
+             <li><a href="rolam.html">Rólam</a> </li>
+             <li><a href="free.html">Szabadidőmben</a> </li>
+             <li><a href="proj.html">Projektek</a> </li>
+            </ul>
+         </nav>
+       </header>
+       <section>    
+       <h1>
+         Projektmunkáim
+       </h1>
+       <p class="alresz">"Ad astra per aspera."</p>
+       </section>
+    </div>
+
+    <div class="kekkontener">
+        <ul>
+            <li> 
+               
+                <div class="szovegkontener">
+                    <p>A néhány kisebb szabású projektemet félretéve, megemlíteném  eddigi legnagyobb szabású projektemet, az érettségi munkám (vidékemen a középiskolai tanulmányok befejezéséhez szükséges), mely a motorkerékpárokkal, azok dinamikájával foglalkozik, nagyrészt <i> Vittore Cossalter: Motorcycle Dynamics</i> című könyvére épülve. <br> <br>Részlet: </p> 
+                 </div>
+                 <img src="kep.PNG" alt="kivagas" class="kivagas">
+                 <div class="szovegkontener">
+                   <p>Emellett persze rengeteg ötlet rejtőzik a tarsolyomban, tervben van saját építésű napkollektor, "benzin meghajtású szórakozóeszköz" és még sok más dolog tervezése és építése. </p>
+                </div>
+                   
+                
+            </li>
+        </ul>
+    </div>
+    <div class="feherkontener">
+        <div class="kontener">
+            <ul>
+              <li>
+                  <figure>
+                  <p class="alair">Fenyvesi Flórián &#8482</p>
+                    <p class="adress">Topolya, Puskin utca 7, 24300<br> Vajdaság, Szerbia</p>
+                </figure>
+                 
+              </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-kontener">
+            <div class="masikkontener">
+                <p1 class="bal"><a href="#"></a>Kapcsolat: <br>Email: f.fenyvesi00@gmail.com</p1>
+                <p1 class="jobb"><a href="#"></a>Közösségi média: <br>Facebook: Fenyvesi Flórián</p1> 
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+
+      menu.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+      exit.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+      
+    </script>
+
+
+</body>

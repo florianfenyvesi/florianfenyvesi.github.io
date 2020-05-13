@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fenyvesi Flórián honlapja</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="kontener"> 
+       <header>
+         <img src="mogi.jpg" alt="mogi" class="mogi">
+
+         <nav>
+           <a href="#" class="hide-desktop">
+              <img src="Menutoggle.png" alt="toggle menu" class="menu" id="menu">
+           </a>
+             <ul class="show-desktop hide-mobile" id="nav" >
+             <li id ="exit" class ="exit-btn hide-desktop">  <img src="exit.png" alt="exit menu"></li>
+             <li><a href="index.html">Kezdőlap</a> </li>
+             <li><a href="rolam.html">Rólam</a> </li>
+             <li><a href="free.html">Szabadidőmben</a> </li>
+             <li><a href="proj.html">Projektek</a> </li>
+            </ul>
+         </nav>
+       </header>
+       <section>    
+        <img src="bme-logo.png" alt="BME" class="BME">
+        <h1>Fenyvesi Flórián honlapja</h1>
+        <p class="alresz">"Ad astra per aspera."</p>
+        
+       </section>
+    </div>
+
+    <div class="kekkontener">
+        <ul>
+            <li> 
+                <img src="nofun.jpg" alt="fejikon" class="fejikon">
+                <div class="szovegkontener">
+                    <p>Fenyvesi Flórián vagyok, a Budapesti Műszaki és Gazdaságtudományi Egyetem ( <a href="https://www.bme.hu/">BME</a> ) elsőéves gépészmérnök hallgatója. <br> Ezen oldal egy házi feladat keretében készült, melynek célja a HTML, a CSS, valamint azok használatának megértése és megfelelő szintű elsajátítása. Több rólam az erre kialakított menüpontban olvasható.</p> 
+                 </div>
+            </li>
+            <li> 
+               <img src="ikon2.png" alt="pingikon" class="pingikon" >
+                <div class="szovegkontener">
+                    <p>Az egyetemen kívüli életem legnagyobb részét sporttal és utazással töltöm, és hogy miért, az kiderül az erre létrehozott almenüben, mely a lap tetején levő menü ikonra kattintva érhető el. <br> Elöljáróban csak annyit árulnék el, hogy már hat éves korom óta foglalkozom asztalitenisszel, és a 2019/20-as szezonban az osztrák Bundesliga egyik csapatát erősítem.  </p>
+                </div>
+            </li>
+            <li> 
+                <img src="ikon3.png" alt="mailikon" class="mailikon">
+                <div class="szovegkontener">
+                    <p>Elérhetőségeimet megtalálhatják ugyanúgy a kezdőlap alján, ahogyan az aloldalak alján is. <br> Bármilyen kérdésük lenne, keressenek bátran!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="feherkontener">
+        <div class="kontener">
+            <ul>
+              <li>
+                  <figure>
+                  <p class="alair">Fenyvesi Flórián &#8482</p>
+                    <p class="adress">Topolya, Puskin utca 7, 24300<br> Vajdaság, Szerbia</p>
+                </figure>
+                 
+              </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-kontener">
+            <div class="masikkontener">
+                <p1 class="bal"><a href="#"></a>Kapcsolat: <br>Email: f.fenyvesi00@gmail.com</p1>
+                <p1 class="jobb"><a href="#"></a>Közösségi média: <br>Facebook: Fenyvesi Flórián</p1> 
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      var menu = document.getElementById('menu');
+      var nav = document.getElementById('nav');
+      var exit = document.getElementById('exit');
+
+      menu.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+      exit.addEventListener('click', function(e){
+          nav.classList.toggle('hide-mobile');
+          e.preventDefault();
+      });
+      
+    </script>
+
+
+</body>
+</html>
